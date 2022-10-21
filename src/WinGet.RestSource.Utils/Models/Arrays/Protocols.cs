@@ -1,4 +1,4 @@
-﻿// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // <copyright file="Protocols.cs" company="Microsoft Corporation">
 //     Copyright (c) Microsoft Corporation. Licensed under the MIT License.
 // </copyright>
@@ -17,7 +17,7 @@ namespace Microsoft.WinGet.RestSource.Utils.Models.Arrays
     {
         private const bool Nullable = true;
         private const bool Unique = true;
-        private const uint Max = 16;
+        private const uint Max = 64;
         private static readonly Type Validator = typeof(ProtocolsValidator);
 
         /// <summary>
