@@ -1,4 +1,4 @@
-﻿// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // <copyright file="HeaderConstants.cs" company="Microsoft Corporation">
 //     Copyright (c) Microsoft Corporation. Licensed under the MIT License.
 // </copyright>
@@ -11,6 +11,11 @@ namespace Microsoft.WinGet.RestSource.Utils.Constants
     /// </summary>
     public class HeaderConstants
     {
+        /// <summary>
+        /// Authorization Header.
+        /// </summary>
+        public const string Authorization = "Authorization";
+
         /// <summary>
         /// Version Header.
         /// </summary>

@@ -1,4 +1,4 @@
-﻿// -----------------------------------------------------------------------
+// -----------------------------------------------------------------------
 // <copyright file="ApiConstants.cs" company="Microsoft Corporation">
 //     Copyright (c) Microsoft Corporation. Licensed under the MIT License.
 // </copyright>
@@ -23,6 +23,11 @@ namespace Microsoft.WinGet.RestSource.Utils.Constants
         /// CertificateAuthenticationRequiredName environmental variable name.
         /// </summary>
         public const string CertificateAuthenticationRequiredEnvName = "CertificateAuthenticationRequired";
+
+        /// <summary>
+        /// EntraIdAuthenticationRequiredName environmental variable name.
+        /// </summary>
+        public const string EntraIdAuthenticationRequiredEnvName = "EntraIdAuthenticationRequired";
 
         /// <summary>
         /// CertificateAuthenticationSelfSigned environmental variable name.
@@ -99,9 +104,19 @@ namespace Microsoft.WinGet.RestSource.Utils.Constants
         public static string CertificateAuthenticationRequiredEnv => Environment.GetEnvironmentVariable(CertificateAuthenticationRequiredEnvName);
 
         /// <summary>
+        /// Gets whether Entra Id authentication is enabled.
+        /// </summary>
+        public static string EntraIdAuthenticationRequiredEnv => Environment.GetEnvironmentVariable(EntraIdAuthenticationRequiredEnvName);
+
+        /// <summary>
         /// Gets a value indicating whether certificate authentication is enabled.
         /// </summary>
         public static bool CertificateAuthenticationRequired => bool.Parse(ApiConstants.CertificateAuthenticationRequiredEnv);
+
+        /// <summary>
+        /// Gets a value indicating whether Entra Id authentication is enabled.
+        /// </summary>
+        public static bool EntraIdAuthenticationRequired => bool.Parse(ApiConstants.EntraIdAuthenticationRequiredEnv);
 
         /// <summary>
         /// Gets whether self signed certificates are allowed.
